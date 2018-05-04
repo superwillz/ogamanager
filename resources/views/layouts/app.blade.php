@@ -8,12 +8,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Oga Manager Inventory System') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-	
+		
 </head>
 <body>
     <div id="app">
@@ -31,7 +31,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Oga Manager Inventory System') }}
                     </a>
                 </div>
 
@@ -86,6 +86,10 @@
                     </div>
                 </div>
             </div>
+			
+			<div id="footer">
+				&copy; <a href="//facebook.com/ayamwillz" title="William Odiomonafe">William Odiomonafe</a> (<?= date('Y'); ?>
+			</div>
         </div>
         @endif
     </div>

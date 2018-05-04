@@ -62,8 +62,44 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+			
+			.footer {
+				position:absolute;
+				bottom:0px;
+				font-weight:bold;
+				font-size:14px;
+				width:100%;
+			}
+			
+			.footer p {
+				padding:0px 5px;
+			}
+			.footer a {
+				text-decoration:none;
+			}
+			
+			.footer .pull-left {
+				float:left;
+			}
+			
+			.footer .pull-right {
+				float:right;
+			}
+			
+			.footer .copyright {
+				text-align:left;
+			}
+		
+			.footer .notice {
+				text-align:right;
+			}
+			
+			.footer img {
+				width:15px;
+			}
         </style>
-    </head>
+		
+   </head>
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
@@ -83,9 +119,19 @@
                 </div>
 
                 <div class="links">
-                    
+                    A Free & Simple Inventory Management System For Small Businesses...
                 </div>
+				
             </div>
+
+			<div class="footer">
+				<p class="pull-left copyright">
+					&copy; <a href="//facebook.com/ayamwillz" title="William Odiomonafe">William Odiomonafe</a> (<?= date('Y'); ?>)
+					- Contribute to this Project via &nbsp; &nbsp; <a href="https://github.com/superwillz/ogamanager"><img src="git_icon.png" />GitHub</a>
+				</p>
+				<p class="pull-right notice">NOTE: This application IS NOT for commercial purpose.</p>
+			</div>
+
         </div>
     </body>
 </html>
